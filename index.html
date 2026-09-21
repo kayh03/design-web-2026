@@ -4,52 +4,124 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Prática Tailwind - Dia 2 [Atividade 1]</title>
+  <title>Prática Tailwind - Dia 2 [Atividade 2]</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100 p-6">
+<body class="bg-gray-100">
 
-  <!-- Card da notícia -->
-  <div class="max-w-sm mx-auto mt-10 bg-white rounded-xl shadow-md overflow-hidden border border-green-200">
+  <section class="max-w-7xl mx-auto px-4 py-10">
 
-    <!-- Imagem -->
-    <img
-      src="premio.jpg"
-      alt="Troféu de premiação"
-      class="w-full h-48 object-cover"
-    />
+    <!-- Título da seção -->
+    <h1 class="text-3xl font-bold text-green-800 mb-8">
+      Notícias
+    </h1>
 
-    <!-- Conteúdo -->
-    <div class="p-6 space-y-3">
-        https://pixabay.com/pt/images/search/premiacao/
-      <!-- Título -->
-      <h2 class="text-2xl font-bold text-green-800">
-        IFRN tem projetos entre os vencedores do Prêmio IEL 2026
-      </h2>
+    <!-- Grid dos cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      <!-- Descrição -->
-      <p class="text-gray-700 text-base">
-        Instituto conquistou o 1º lugar em Educação Inovadora -
-        Nível Técnico e o 2º lugar em Educação Inovadora -
-        Nível Superior.
-      </p>
+      <!-- CARD 1 - ABERTURA -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
 
-      <div class="flex flex-wrap gap-2 pt-2">
+        <img
+          src="noticia1.jpeg"
+          alt="Abertura do IC 2026"
+          class="w-full h-48 object-cover"
+        />
 
-        <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
-          1º lugar - Nível Técnico
-        </span>
+        <div class="p-5 flex flex-col flex-1 space-y-2">
 
-        <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
-          2º lugar - Nível Superior
-        </span>
+          <span class="inline-block w-fit text-xs font-semibold px-3 py-1 rounded-full bg-green-100 text-green-800">
+            Evento
+          </span>
 
+          <h2 class="text-xl font-bold text-green-800">
+            IC 2026 inicia programação com participação dos estudantes
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            A abertura do evento contou com a presença de estudantes
+            e pesquisadores, dando início a uma programação dedicada
+            à ciência, tecnologia e inovação.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Hoje
+          </p>
+
+        </div>
+      </div>
+
+
+      <!-- CARD 2 - ESPORTES -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
+
+        <img
+          src="noticia2.jpeg"
+          alt="Atividade esportiva no IC 2026"
+          class="w-full h-48 object-cover"
+        />
+
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+
+          <span class="inline-block w-fit text-xs font-semibold px-3 py-1 rounded-full bg-blue-100 text-blue-800">
+            Esportes
+          </span>
+
+          <h2 class="text-xl font-bold text-green-800">
+            Programação esportiva movimenta o IC 2026
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            Os estudantes participaram de diversas atividades esportivas,
+            proporcionando momentos de lazer, interação e integração
+            durante o evento.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Há 3 horas
+          </p>
+
+        </div>
+      </div>
+
+
+      <!-- CARD 3 - DESTAQUES -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
+
+        <img
+          src="noticia3.jpeg"
+          alt="Estudantes participando do IC 2026"
+          class="w-full h-48 object-cover"
+        />
+
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+
+          <span class="inline-block w-fit text-xs font-semibold px-3 py-1 rounded-full bg-yellow-100 text-yellow-800">
+            Destaques
+          </span>
+
+          <h2 class="text-xl font-bold text-green-800">
+            Estudantes apresentam trabalhos durante o IC 2026
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            Trabalhos desenvolvidos pelos alunos ganham destaque
+            durante o evento, mostrando criatividade, conhecimento
+            e dedicação à pesquisa.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Há 1 dia
+          </p>
+
+        </div>
       </div>
 
     </div>
-  </div>
+
+  </section>
 
 </body>
 </html>
