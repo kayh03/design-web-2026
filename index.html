@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Kauany</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet">
+</head>
+
+<body class="bg-base-200 text-base-content">
+
+    <!-- NAVBAR -->
+    <nav class="navbar bg-base-100 shadow-sm px-6">
+        <div class="flex-1">
+            <a href="#inicio" class="text-2xl font-bold text-secondary">
+                Kauany.
+            </a>
+        </div>
+
+        <div class="flex gap-2">
+            <a href="#projetos" class="btn btn-ghost hidden sm:flex">
+                Projetos
+            </a>
+
+            <button onclick="trocarTema()" id="tema" class="btn btn-ghost">
+                🌙
+            </button>
+
+            <a href="#contato" class="btn btn-secondary">
+                Contato
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section id="inicio" class="hero min-h-[70vh] bg-base-100">
+        <div class="hero-content text-center">
+
+            <div class="max-w-2xl">
+
+                <div class="flex justify-center gap-2 mb-5">
+                    <span class="badge badge-secondary">
+                        Estudante
+                    </span>
+
+                    <span class="badge badge-success">
+                        Desenvolvimento Web
+                    </span>
+                </div>
+
+                <h1 class="text-5xl font-bold">
+                    Olá, eu sou
+                    <span class="text-secondary">Kauany</span>!
+                </h1>
+
+                <p class="py-6 text-base-content/70">
+                    Sou estudante de programação e desenvolvimento web.
+                    Este é meu portfólio com alguns projetos e tecnologias
+                    que estou aprendendo no IFRN.
+                </p>
+
+                <a href="#projetos" class="btn btn-success mr-2">
+                    Ver projetos
+                </a>
+
+                <a href="#sobre" class="btn btn-outline btn-secondary">
+                    Sobre mim
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SOBRE -->
+    <section id="sobre" class="py-16 px-6">
+
+        <div class="max-w-5xl mx-auto text-center">
+
+            <span class="badge badge-success">
+                SOBRE MIM
+            </span>
+
+            <h2 class="text-3xl font-bold mt-3">
+                Tecnologias que estudo
+            </h2>
+
+            <div class="flex justify-center gap-3 flex-wrap mt-6">
+                <span class="badge badge-secondary badge-lg">HTML</span>
+                <span class="badge badge-success badge-lg">CSS</span>
+                <span class="badge badge-secondary badge-lg">Tailwind CSS</span>
+                <span class="badge badge-success badge-lg">JavaScript</span>
+                <span class="badge badge-outline badge-lg">Python</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="py-16 px-6 bg-base-100">
+
+        <div class="max-w-6xl mx-auto">
+
+            <div class="text-center mb-10">
+                <span class="badge badge-secondary">
+                    PORTFÓLIO
+                </span>
+
+                <h2 class="text-3xl font-bold mt-3">
+                    Meus projetos
+                </h2>
+            </div>
+
+            <div class="grid gap-6 md:grid-cols-3">
+
+                <!-- CARD 1 -->
+                <div class="card bg-base-200 shadow-md">
+                    <div class="card-body">
+                        <span class="badge badge-secondary w-fit">
+                            Web
+                        </span>
+
+                        <h3 class="card-title">
+                            Página Web
+                        </h3>
+
+                        <p>
+                            Página desenvolvida com HTML, CSS e Tailwind CSS.
+                        </p>
+
+                        <div class="card-actions justify-end">
+                            <a href="#contato" class="btn btn-secondary">
+                                Saiba mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card bg-base-200 shadow-md">
+                    <div class="card-body">
+                        <span class="badge badge-success w-fit">
+                            JavaScript
+                        </span>
+
+                        <h3 class="card-title">
+                            Projeto Interativo
+                        </h3>
+
+                        <p>
+                            Projeto para praticar JavaScript e interação
+                            com o usuário.
+                        </p>
+
+                        <div class="card-actions justify-end">
+                            <a href="#contato" class="btn btn-success">
+                                Saiba mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card bg-base-200 shadow-md">
+                    <div class="card-body">
+                        <span class="badge badge-secondary w-fit">
+                            Python
+                        </span>
+
+                        <h3 class="card-title">
+                            Sistema em Python
+                        </h3>
+
+                        <p>
+                            Sistema desenvolvido para praticar lógica
+                            e programação em Python.
+                        </p>
+
+                        <div class="card-actions justify-end">
+                            <a href="#contato" class="btn btn-secondary">
+                                Saiba mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTATO -->
+    <section id="contato" class="py-16 px-6">
+
+        <div class="max-w-xl mx-auto">
+
+            <div class="text-center mb-8">
+                <span class="badge badge-success">
+                    CONTATO
+                </span>
+
+                <h2 class="text-3xl font-bold mt-3">
+                    Entre em contato
+                </h2>
+            </div>
+
+            <div class="card bg-base-100 shadow-md">
+                <div class="card-body">
+
+                    <form class="space-y-4">
+
+                        <input
+                            type="text"
+                            placeholder="Seu nome"
+                            class="input input-bordered w-full"
+                        >
+
+                        <input
+                            type="email"
+                            placeholder="Seu e-mail"
+                            class="input input-bordered w-full"
+                        >
+
+                        <button class="btn btn-success w-full">
+                            Enviar mensagem
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer footer-center bg-base-300 p-6">
+        <p>
+            <strong class="text-secondary">Kauany.</strong>
+            Portfólio • Tarefa 33 — DaisyUI
+        </p>
+    </footer>
+
+
+    <!-- TEMA -->
+    <script>
+        function trocarTema() {
+            const html = document.documentElement;
+            const botao = document.getElementById("tema");
+
+            if (html.dataset.theme === "light") {
+                html.dataset.theme = "dark";
+                botao.textContent = "☀️";
+            } else {
+                html.dataset.theme = "light";
+                botao.textContent = "🌙";
+            }
+        }
+    </script>
+
+</body>
+</html>
